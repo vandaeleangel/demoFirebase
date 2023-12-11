@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599136051758",
+    "project_id": "testdynamiclinks-fa637",
+    "storage_bucket": "testdynamiclinks-fa637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599136051758:android:60e865fedcb8a1acd675bf",
+        "android_client_info": {
+          "package_name": "com.angel_1991.testLinks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLUPnzaTR9TMXypNu6xWQXA_PxKs289wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
