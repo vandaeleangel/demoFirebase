@@ -11,7 +11,7 @@ const LoginScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
-        <Text>LoginScreen</Text>
+        <Text>LoginScreen Test</Text>
         <View style={styles.buttonContainer}>
           <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.button}>
             <Text style={styles.buttonText}>Login</Text>
