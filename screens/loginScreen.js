@@ -5,12 +5,12 @@ import {
   TouchableOpacity,
   SafeAreaView
 } from "react-native";
-import { useEffect} from "react";
-import React from "react";
+import { useEffect } from "react";
 import dynamicLinks from '@react-native-firebase/dynamic-links';
 
-const LoginScreen = ({navigation}) => {
 
+
+const LoginScreen = ({navigation}) => {
   useEffect(() => {
     const handleDynamicLink = async () => {
       try {
