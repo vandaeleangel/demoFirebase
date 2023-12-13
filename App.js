@@ -32,10 +32,10 @@ export default function App() {
     dynamicLinks()
       .getInitialLink()
       .then(link => {
-        if (link.url === 'https://angel1991.page.link/loginpage') {
+        if (link.url === 'https://www.google.com/search?client=firefox-b-d&q=succes') {
           console.log(link)
          console.log("link is equal to url")
-        }
+        } else console.log('reached', link.url)
       });
   }, []);
   return (
