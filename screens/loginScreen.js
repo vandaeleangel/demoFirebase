@@ -27,6 +27,7 @@ const LoginScreen = ({ navigation }) => {
         console.error("Error handling dynamic link:", error);
       });
   }, []);
+
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
