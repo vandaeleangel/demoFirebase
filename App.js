@@ -5,11 +5,24 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useEffect } from "react";
 import dynamicLinks from '@react-native-firebase/dynamic-links';
 
-// import { initializeApp } from '@react-native-firebase/app';
+import { firebase } from '@react-native-firebase/app';
+
 import HomeScreen from "./screens/homescreen";
 import LoginScreen from "./screens/loginScreen";
 
-// initializeApp();
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBLUPnzaTR9TMXypNu6xWQXA_PxKs289wY",
+  projectId: "testdynamiclinks-fa637",
+  appId:"1:599136051758:android:60e865fedcb8a1acd675bf",
+
+};
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+} else {
+  firebase.app(); // 
+}
+
 
 const Stack = createNativeStackNavigator();
 
