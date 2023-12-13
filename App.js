@@ -1,9 +1,8 @@
 import { StyleSheet } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer  } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { useEffect } from "react";
-import dynamicLinks from "@react-native-firebase/dynamic-links";
+
 
 import { firebase } from "@react-native-firebase/app";
 
@@ -24,22 +23,8 @@ if (!firebase.apps.length) {
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  useEffect(() => {
-    console.log("reached useEffect");
-    dynamicLinks()
-      .getInitialLink()
-      .then((link) => {
-        if (link.url.includes("google")) {
-          console.log(link);
-          console.log("Link contains 'google'");
-        } else {
-          console.log('Link does not contain "google":', link.url);
-        }
-      })
-      .catch((error) => {
-        console.error("Error handling dynamic link:", error);
-      });
-  }, []);
+
+ 
   return (
     <NavigationContainer>
       <Stack.Navigator>
