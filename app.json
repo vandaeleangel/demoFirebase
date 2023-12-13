@@ -31,15 +31,16 @@
           "category": ["BROWSABLE", "DEFAULT"]
         }
       ],
+
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
+    "plugins": ["@react-native-firebase/app"],
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["@react-native-firebase/app"],
     "extra": {
       "eas": {
         "projectId": "84592958-349e-4f45-a5a5-624966c419f1"

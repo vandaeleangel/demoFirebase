@@ -5,27 +5,13 @@ import {
   TouchableOpacity,
   SafeAreaView
 } from "react-native";
-import { useEffect } from "react";
-import dynamicLinks from '@react-native-firebase/dynamic-links';
+
 
 
 
 const LoginScreen = ({navigation}) => {
-  useEffect(() => {
-    const handleDynamicLink = async () => {
-      try {
-        const link = await dynamicLinks().getInitialLink();
-        if (link && link.url.includes('loginpage')) {
-          console.log("You have reached the login page");
-          navigation.navigate('Home');
-        }
-      } catch (error) {
-        console.error("Error getting initial link:", error);
-      }
-    };
-  
-    handleDynamicLink();
-  }, [navigation]);
+ 
+
   return (
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
